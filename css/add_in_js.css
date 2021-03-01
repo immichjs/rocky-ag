@@ -1,0 +1,15 @@
+/* Classes aplicadas via javascript */
+.open {
+    justify-content: flex-end;
+}
+
+.move {
+    left: 0;
+    background: rgba(255, 255, 255, 0.080);
+    backdrop-filter: blur(20px);
+}
+
+.inv {
+    opacity: 0;
+    visibility: hidden;
+}

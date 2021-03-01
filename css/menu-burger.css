@@ -1,0 +1,56 @@
+.hd__nav___btn-menu {
+    position: relative;
+    display: flex;
+    justify-self: end;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    display: none; /* Remover no Media Queries */
+}
+
+.hd__nav___btn-menu____burger {
+    width: 64px;
+    height: 8px;
+    background: #fff;
+    border-radius: 6px;
+    transition: all .5s ease-in-out;
+}
+
+.hd__nav___btn-menu____burger::before,
+.hd__nav___btn-menu____burger::after {
+    content: '';
+    position: absolute;
+    width: 64px;
+    height: 8px;
+    background: #fff;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.hd__nav___btn-menu____burger::before {
+    transform: translateY(-16px)
+}
+
+.hd__nav___btn-menu____burger::after {
+    transform: translateY(16px)
+}
+
+.hd__nav___btn-menu.open .hd__nav___btn-menu____burger {
+    background: transparent;
+    transform: translate(64px);
+}
+
+.hd__nav___btn-menu.open .hd__nav___btn-menu____burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.hd__nav___btn-menu.open .hd__nav___btn-menu____burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+/* Alterar no media queries
+.hd__logo {
+    content: url('assets/mobile/logo.png');
+} */

@@ -1,0 +1,118 @@
+/* Configurações iniciais de desenvolvimento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Fundo da primeira parte visível para o usuário */
+.background {
+    background: url('../assets/web/s1\ ft1.png') no-repeat center;
+    height: 100vh;
+    background-size: cover;
+}
+
+/* Header - Cabeçalho da página */
+.hd {
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 150px;
+}
+
+/* Logo Rocky */
+.hd__logo {
+    order: 1;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-drag: none;
+    transition: .2s;
+}
+
+/* Container do nav */
+.hd__nav {
+    position: relative;
+    order: 2;
+}
+
+.hd__nav___list {
+    display: flex;
+    gap: 64px;
+    text-align: center;
+}
+
+.hd__nav___list____item {
+    padding: 16px 0;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .05s;
+}
+
+.hd__nav___list____item a {
+    text-decoration: none;
+    color: #fff;
+    transition: .2s;
+}
+
+.hd__nav___list____item a:hover {
+    color: cadetblue;
+}
+
+.hd__btn-menu,
+.hd__nav___list____item:first-child,
+.hd__nav___list____services,
+.hd__nav___list____differentials {
+    display: none;
+}
+
+.hp__container {
+    color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 250px;
+}
+
+.hp__container___title {
+    font-size: 10rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 13rem;
+}
+
+.hp__container___description {
+    margin: 0 544px;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 94px;
+    line-height: 2rem;
+}
+
+.hp__container___description span {
+    color: yellow;
+    font-weight: 500;
+}
+
+.hp__container___contact {
+    background: #1cd4e9;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 32px;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 128px;
+    text-transform: uppercase;
+}
