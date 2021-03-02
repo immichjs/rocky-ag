@@ -11,7 +11,7 @@ body {
 }
 
 /* Fundo da primeira parte visível para o usuário */
-.background {
+.bg-1 {
     background: url('../assets/web/s1\ ft1.png') no-repeat center;
     height: 100vh;
     background-size: cover;
@@ -115,4 +115,44 @@ body {
     cursor: pointer;
     margin-top: 128px;
     text-transform: uppercase;
+}
+
+.bg-2 {
+    background: url('../assets/web/background-web.png') no-repeat center;
+    background-size: cover;
+    height: 300vh;
+    position: relative;
+}
+
+.container__about {
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    gap: 148px;
+    padding: 110px 0 0 156px;
+}
+
+.container__about___title {
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.container__about___textbox {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    padding: 48px;
+    display: grid;
+    grid-gap: 32px;
+    border-radius: 8px;
+}
+
+.container__about___textbox____paragraph {
+    line-height: 32px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.container__about___textbox____paragraph:nth-child(2n+2) {
+    font-weight: 700;
 }
