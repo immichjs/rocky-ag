@@ -172,6 +172,7 @@
     
     .hd__nav___list____item_____arrow {
         color: #fff;
+        display: inline;
     }
 
     .hd__nav___list____item:last-child {
@@ -197,7 +198,7 @@
     }
     
     .hp__container___description {
-        margin: 0 32px;
+        margin: 0 16px;
         margin-top: 192px;
     }
 
@@ -218,9 +219,17 @@
 
 /* Abaixo de 768px de largura */
 @media only screen and (max-width: 768px) {
+    .hd__nav___list____item_____arrow {
+        display: inline-block;
+    }
+
     .hp__container___title {
-        font-size: 3rem;
+        font-size: 4rem;
         line-height: 5rem;
+    }
+    
+    .hp__container___description {
+        font-size: 1.3rem;
     }
 
     .hp__container___contact {
@@ -234,7 +243,7 @@
 }
 
 /* Abaixo de 425px de largura */
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 550px) {
     .hd {
         justify-content: flex-end;
         padding: 0 16px;
@@ -260,5 +269,12 @@
     .hp__container___title {
         font-size: 2rem;
         line-height: 3rem;
+    }
+
+    .hd__nav___list____services_____item,
+    .hd__nav___list____differentials_____item {
+        font-size: 1.1rem;
+        font-weight: 400;
+        line-height: 2rem;
     }
 }

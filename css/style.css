@@ -69,7 +69,8 @@ body {
 .hd__btn-menu,
 .hd__nav___list____item:first-child,
 .hd__nav___list____services,
-.hd__nav___list____differentials {
+.hd__nav___list____differentials,
+.hd__nav___list____item_____arrow {
     display: none;
 }
 
@@ -97,11 +98,12 @@ body {
     font-size: 1.4rem;
     margin-top: 94px;
     line-height: 2rem;
+    font-weight: 500;
 }
 
 .hp__container___description span {
     color: yellow;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .hp__container___contact {
