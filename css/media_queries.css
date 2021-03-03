@@ -37,6 +37,11 @@
 }
 
 @media only screen and (min-width: 1024px) {
+
+    .bg-1 {
+        height: 100vh;
+    }
+    
     .hd {
         display: flex;
         align-items: center;
