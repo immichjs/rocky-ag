@@ -34,10 +34,35 @@
         font-size: 5rem;
         line-height: 6rem;    
     }
+
+    .container__services___list {
+        gap: 16px;
+    }
+
+    .container__services___list____item {
+        width: 357px;
+        height: 450px;
+    }
+    
+    .container__services___list____item-box {
+        border-radius: 30px;
+    }
+
+    .container__services___list____item-box_____text {
+        margin-top: 64px;
+    }
+
+    .title-services, .title-midia-digital-performance, .title-tec-implementations {
+        font-size: 1.1rem;
+    }
+
+    .container__differentials___list____item {
+        width: 300px;
+        height: 500px;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
-
     .bg-1 {
         height: 100vh;
     }
@@ -92,7 +117,7 @@
     }
 
     .hp__container {
-        margin-top: 148px;
+        margin-top: 64px;
     }
 
     .hp__container___title {
@@ -105,16 +130,38 @@
     }
 
     .container__about {
-        display: flex;
-        flex-direction: column;
-        padding: 64px 0;
         margin: 0 110px;
     }
 
     .container__about___textbox {
-        width: 80%;
+        width: 75%;
     }
     
+    .container__services {
+        margin: 0 110px;
+    }
+
+    .services-img-1 {
+        background: url('../assets/web/s3\ ft1.png') no-repeat center;
+    }
+    
+    .services-img-2 {
+        background: url('../assets/web/s3\ ft2.png') no-repeat center;
+    }
+    
+    .services-img-3 {
+        background: url('../assets/web/s3\ ft3.png') no-repeat center;
+    }
+
+    .container__differentials {
+        padding: 0 110px;
+    }
+
+    .dif-text-paragraph {
+        margin-top: 32px;
+        font-size: 1rem;
+        font-weight: 600;
+    }
 }
 
 @media only screen and (min-width: 1300px) {
