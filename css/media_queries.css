@@ -1,280 +1,128 @@
-/* Abaixo de 1800px de largura */
-@media only screen and (max-width: 1800px) {
+@media only screen and (max-width: 420px) {
     .hd {
-        flex-direction: column;
-        height: auto;
-        padding: 0 32px;
+        justify-content: space-between;
+    }
+    .hd__btn-menu {
+        position: relative;
     }
     
     .hd__logo {
-        margin: 32px 0;
+        margin-right: 30px;
     }
+}
 
-    .hd__nav___list {
-        display: flex;
-        text-align: center;
-        gap: 16px;
-        border-top: 1px solid #fff;
-        padding: 16px;
-    }
-
-    .hd__nav___list____item {
-        font-size: 1.2rem;
-    }
-
-
-    .hd__nav___list____item a:hover {
-        color: #fff;
-    }
-
-    .hd__nav___list____item a:active {
-        color: darkcyan;
-    }
-
-    .hp__container___description {
-        margin: 0 194px;
-        margin-top: 94px;
-    }
-
-    .hp__container___title {
-    font-size: 7rem;
-    line-height: 9rem;
-    }
-
-    .hp__container___contact {
-        margin-top: 384px;
-    }
-
-    .container__about {
+@media only screen and (max-width: 425px) {
+    .move {
         width: 100%;
-        padding: 110px 64px 0;
-    }
-}
-
-/* Abaixo de 1440px de largura */
-@media only screen and (max-width: 1440px) {
-}
-
-/* Abaixo de 1024px de largura */
-@media only screen and (max-width: 1024px) {
-    .hd {
-        flex-direction: row;
-        justify-content: center;
+        border-radius: 0;
     }
     
-    .hd__nav {
-        display: grid;
-        position: absolute;
-        left: -500px;
-        top: 0;
-        border-top-right-radius: 50px;
-        border-bottom-right-radius: 50px;
-        order: 1;
-        transition: .5s;
-        padding: 110px 40px 32px;
-        z-index: 1;
-    }
-    
-    .hd__btn-menu {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80px;
-        height: 80px;
-        cursor: pointer;
-        transition: all .5s ease-in-out;
-        z-index: 2;
+    .open {
         left: 32px;
     }
-    
-    .hd__btn-menu___burger {
-        width: 64px;
-        height: 8px;
-        background: #fff;
-        border-radius: 6px;
-        transition: all .5s ease-in-out;
-    }
-    
-    .hd__btn-menu___burger::before,
-    .hd__btn-menu___burger::after {
-        content: '';
-        position: absolute;
-        width: 64px;
-        height: 8px;
-        background: #fff;
-        border-radius: 5px;
-        transition: all .5s ease-in-out;
-    }
-    
-    .hd__btn-menu___burger::before {
-        transform: translateY(-16px)
-    }
-    
-    .hd__btn-menu___burger::after {
-        transform: translateY(16px)
-    }
-    
-    /* Animação do menu hamburger */
-    .hd__btn-menu.open .hd__btn-menu___burger {
-        background: transparent;
-        transform: translate(-57px);
-    }
-    
-    .hd__btn-menu.open .hd__btn-menu___burger::before {
-        transform: rotate(45deg) translate(32px, -32px);
-    }
-    
-    .hd__btn-menu.open .hd__btn-menu___burger::after {
-        transform: rotate(-45deg) translate(32px, 32px);
-    }
+}
 
-    /* Animação da nav list */
-    .hd__nav___list____item:first-child,
-    .hd__nav___list____services,
-    .hd__nav___list____differentials {
-        display: block;
+@media only screen and (min-width: 425px) {
+    .hp__container___title {
+        font-size: 3rem;
+        line-height: 5rem;    
     }
+}
 
-    .hd__nav___list {
-        display: grid;
-        font-size: 1.875rem;
-        font-weight: 500;
-        text-align: center;
-        border: none;
-        padding: 0;
-        gap: 0;
-    }
-
-    .hd__nav___list____item {
-        border-bottom: 3px solid rgb(211, 211, 211, 0.2);
-        font-size: 1.9rem;
-        font-weight: 400;
-        line-height: normal;
-        padding: 30px 0;
-    }
-    
-    .hd__nav___list____services_____item,
-    .hd__nav___list____differentials_____item {
-        font-size: 1.2rem;
-        line-height: normal;
-        margin: 0;
-        padding: 0;
-    }
-    
-    .hd__nav___list____services,
-    .hd__nav___list____differentials {
-        border-bottom: 1px solid rgb(211, 211, 211);
-        padding: 32px 0;
-        display: none;
-        color: #fff;
-    }
-    
-    .hd__nav___list____item_____arrow {
-        color: #fff;
-        display: inline;
-    }
-
-    .hd__nav___list____item:last-child {
-        border: none;
-    }
-    /* Classes aplicadas via javascript */
-    .open {
-        left: 332px;
-    }
-
-    .move {
-        background: rgba(255, 255, 255, 0.080);
-        backdrop-filter: blur(20px);
-    }
-
-    .display-visible {
-        display: block;
-    }
-
+@media only screen and (min-width: 768px) {
     .hp__container___title {
         font-size: 5rem;
-        line-height: 6rem;
-    }
-    
-    .hp__container___description {
-        margin: 0 16px;
-        margin-top: 192px;
-    }
-
-    .hp__container___contact {
-        padding: 24px 64px;
-        font-size: 1.2rem;
-    }
-    
-    .bg-2 {
-        background: none;
-    }
-
-    .container__about {
-        padding: 110px 64px 0;
-        gap: 64px;
+        line-height: 6rem;    
     }
 }
 
-/* Abaixo de 768px de largura */
-@media only screen and (max-width: 768px) {
-    .hd__nav___list____item_____arrow {
-        display: inline-block;
-    }
-
-    .hp__container___title {
-        font-size: 4rem;
-        line-height: 5rem;
-    }
-    
-    .hp__container___description {
-        font-size: 1.3rem;
-    }
-
-    .hp__container___contact {
-        padding: 16px 32px;
-        font-size: 1rem;
-    }
-
-    .container__about___textbox____paragraph {
-        font-size: 1.1rem;
-    }
-}
-
-/* Abaixo de 425px de largura */
-@media only screen and (max-width: 550px) {
+@media only screen and (min-width: 1024px) {
     .hd {
-        justify-content: flex-end;
-        padding: 0 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+        margin: 0 110px;
     }
 
     .hd__nav {
-        width: 100%;
-        border-radius: 0px;
+        position: relative;
+        padding: 0;
+        order: 2;
+        left: 0;
     }
-    
-    .hd__logo {
-        width: 110px;
+
+    .hd__nav___list {
+        gap: 10px;
+        display: flex;
+        text-align: center;
     }
 
     .hd__nav___list____item {
-        font-size: 1.2rem;
+        padding: 16px 0;
+        text-transform: uppercase;
+        font-weight: 600;
+        cursor: pointer;
+        transition: .05s;
+        font-size: 0.7rem;
+        border: 0;
     }
 
-    .open {
-        left: 32px;
+    .hp__container___description {
+        font-size: 0.9rem;
+        margin: 64px 200px 0 200px;
+    }
+
+    .hd__btn-menu,
+    .hd__nav___list____item:first-child,
+    .hd__nav___list____services,
+    .hd__nav___list____differentials,
+    .hd__nav___list____item_____arrow {
+        display: none;
+    }
+
+    .bg-2 {
+        background: url('../assets/web/bg.png') no-repeat;
+        background-size: cover;
+    }
+
+    .hp__container {
+        margin-top: 148px;
     }
 
     .hp__container___title {
-        font-size: 2rem;
-        line-height: 3rem;
+        font-size: 6.5rem;
+        line-height: 9rem;
     }
 
-    .hd__nav___list____services_____item,
-    .hd__nav___list____differentials_____item {
-        font-size: 1.1rem;
-        font-weight: 400;
-        line-height: 2rem;
+    .hp__container___contact {
+        margin-top: 64px;
+    }
+
+    .container__about {
+        display: flex;
+        flex-direction: column;
+        padding: 64px 0;
+        margin: 0 110px;
+    }
+
+    .container__about___textbox {
+        width: 80%;
+    }
+    
+}
+
+@media only screen and (min-width: 1300px) {
+    .hd__nav___list____item {
+        font-size: 0.9rem;
+    }
+
+    .hd__nav___list {
+        gap: 32px;
+    }
+
+    .hp__container___description {
+        margin-left: 360px;
+        margin-right: 360px;
     }
 }

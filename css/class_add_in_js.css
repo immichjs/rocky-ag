@@ -1,15 +1,21 @@
 /* Classes aplicadas via javascript */
 .open {
     justify-content: center;
+    left: 332px;
 }
 
 .move {
     left: 0;
-    background: rgba(255, 255, 255, 0.080);
-    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
 }
 
-.inv {
-    opacity: 0;
-    visibility: hidden;
+.move-2 {
+    background: none;
+    opacity: 1;
+    visibility: visible;
+}
+
+.display-visible {
+    display: block;
 }
