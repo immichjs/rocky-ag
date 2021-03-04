@@ -162,6 +162,24 @@
         font-size: 1rem;
         font-weight: 600;
     }
+
+    .ft {
+        display: flex;
+        flex-direction: row;
+        padding: 64px 110px;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .ft__container {
+        width: 450px;
+        padding: 0;
+    }
+
+    .ft__forms {
+        width: 500px;
+        padding: 32px 8px;
+    }
 }
 
 @media only screen and (min-width: 1300px) {

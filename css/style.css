@@ -401,3 +401,158 @@ body {
     font-size: 1.3rem;
     font-weight: 600;
 }
+
+.ft {
+    display: grid;
+    background: #191919;
+    border-top: 50px solid yellow;
+    border-bottom: 50px solid yellow;
+    padding: 64px 0 0;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+
+.ft__container {
+    width: 100%;
+    padding: 0 110px;
+}
+
+.ft__container___grid {
+    display: grid;
+    align-items: center;
+    grid-template-areas: 
+        'logo logo social';
+}
+
+.logo-rocky {
+    width: 160px;
+    grid-area: logo;
+}
+
+.facebook, .linkedin {
+    width: 32px;
+}
+
+.ft__container___grid____social {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ft__informations {
+    display: grid;
+    grid-template-areas: 
+        'email pipe telefone'
+        'local local local';
+    align-items: center;
+    margin-top: 32px;
+    gap: 32px;
+}
+
+.ft__informations___email {
+    grid-area: email;
+}
+
+.ft__informations___pipe {
+    grid-area: pipe;
+    justify-self: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.ft__informations___telefone {
+    grid-area: telefone;
+    justify-self: center;
+}
+
+.ft__informations___endereco {
+    grid-area: local;
+}
+
+.ft__informations___telefone {
+    display: flex;
+}
+
+.ft__informations___email,
+.ft__informations___telefone,
+.ft__informations___endereco {
+    display: flex;
+    align-items: center;
+}
+
+.email-tel, .endereco {
+    margin-left: 8px;
+}
+
+.email-tel {
+    font-size: .8rem;
+}
+
+.endereco {
+    font-size: .6rem;
+}
+
+.email-icon, .telefone-icon {
+    width: 24px;
+}
+
+.local-icon {
+    width: 16px;
+}
+
+.ft__container___description {
+    display: grid;
+    gap: 16px;
+    margin-top: 64px;
+}
+
+.ft__container___description____text {
+    font-size: 0.85rem;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.ft__container___description____text:nth-child(2) {
+    color: yellow;
+}
+
+.ft__container___description____text:nth-child(3) {
+    color: cyan;
+}
+
+.ft__forms {
+    width: 100%;
+    display: grid;
+    background: #818181;
+    gap: 32px;
+    padding: 32px 94px;
+    margin-top: 24px;
+}
+
+
+.ft__forms input, .ft__forms textarea {
+    padding: 20px;
+    margin: 0 24px;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+.ft__forms input::placeholder, .ft__forms textarea::placeholder {
+    font-size: 1.3rem;
+    color: #ccc;
+}
+
+.ft__forms textarea {
+    resize: none;
+    height: 150px;
+}
+
+.ft__forms___submit {
+    background: cyan;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
